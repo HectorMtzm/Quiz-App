@@ -265,5 +265,19 @@ namespace Quizz_App.Activities
                 optionDTextView.Text = questionList[index].OptionD;
             }
         }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Android.Resource.Id.Home:
+                    OnBackPressed();                    
+                    return true;
+
+                default:
+                    return base.OnOptionsItemSelected(item);
+
+            }
+        }
     }
 }
