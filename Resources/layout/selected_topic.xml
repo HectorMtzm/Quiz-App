@@ -1,0 +1,52 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/quizImage"
+        android:src="@drawable/history"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"/>
+
+    <TextView
+        android:id="@+id/quizTopicText"
+        android:text="Topic"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/quizDescriptionText"
+        android:layout_margin="20dp"
+        android:text="dafgsa gs GSgS EFs f sadgf sftgh ety j g asr gS EG ADFTJ AED A DSRG As rW 3T DFG   sr hg zadbh SE RFG wrehg adf b ADSR GH Asrg S"
+        android:gravity="center_horizontal"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+        android:id="@+id/startQuizButton"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="start quiz"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="90dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/roundbutton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

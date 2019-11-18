@@ -1,0 +1,178 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/quizToolbar"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme.DarkAppBar"
+        android:elevation="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"/>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="2:00"
+            android:layout_weight="0.15"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="0.6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/questionNumTextView"
+                android:gravity="center"
+                android:text="Question 1/6"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/questionDescriptionTextView"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="asd ad asd ad sa sd asd asd as da sd asd a sda  drgsgdrt srythnwrcyhdxry ectyhncetr wefer gera g  AW Gwr g v  ythsgxrte h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- Option A -->
+
+            <LinearLayout
+                android:paddingHorizontal="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <RadioButton
+                    android:id="@+id/optionARadio"
+                    android:checked="false"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/optionATextView"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="An overDraft"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- Option B -->
+
+            <LinearLayout
+                android:paddingHorizontal="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <RadioButton
+                    android:id="@+id/optionBRadio"
+                    android:checked="false"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/optionBTextView"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="A bank loan"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- Option C -->
+
+            <LinearLayout
+                android:paddingHorizontal="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <RadioButton
+                    android:id="@+id/optionCRadio"
+                    android:checked="false"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/optionCTextView"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Selling assets"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- Option D -->
+
+            <LinearLayout
+                android:paddingHorizontal="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <RadioButton
+                    android:id="@+id/optionDRadio"
+                    android:checked="false"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/optionDTextView"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="A stock market floatation"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        
+        <RelativeLayout
+            android:layout_weight="0.25"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <Button
+                android:id="@+id/proceedButton"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:background="@drawable/roundbutton"
+                android:text="Proceed"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
